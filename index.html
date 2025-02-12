@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clement Ndome | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Removed the background image reference so that the site no longer depends on Flask's static folder */
     body {
-       /* A dark gray as fallback */
-      /* Uncomment below if you have another preferred image URL or want to use a background image hosted elsewhere */
-      body {
-        background: url('image.png') no-repeat center center/cover;
-        background-size: cover;
-        background-attachment: fixed;
-      }
-      
+      background: url('image.png') no-repeat center center/cover;
+      background-size: cover;
+      background-attachment: fixed;
     }
+
     .overlay {
       background: rgba(0, 0, 0, 0.3);
       position: absolute;
@@ -27,17 +23,17 @@
     }
   </style>
 </head>
+
 <body class="bg-gray-900 text-white relative">
   <div class="overlay"></div>
-  
+
   <!-- Navbar -->
   <nav class="py-4 px-6 flex justify-between items-center bg-gray-800 relative">
     <h1 class="text-2xl font-bold"></h1>
     <ul class="flex space-x-6">
-      <li><a href="#" class="hover:text-blue-400">Home</a></li>
+      <li><a href="" class="hover:text-blue-400">Home</a></li>
       <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
       <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
-      <!-- <li><a href="#about" class="hover:text-blue-400">About</a></li> -->
       <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
     </ul>
   </nav>
@@ -46,35 +42,82 @@
   <section class="text-center py-16 relative">
     <h1 class="text-5xl font-bold">Clement Ndome</h1>
     <p class="text-gray-400 mt-2">Surveyor | GIS Specialist | Remote Sensing | Web Developer | ML Eng.</p>
-    <a href="https://drive.google.com/file/d/1AGKIoOXTqOwOkKy9KpnIxHwDhg0qOfXk?embedded=true"
-       target="_blank"
-       class="mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg inline-block">
-       View & Download Resume
+    <a href="https://drive.google.com/file/d/1AGKIoOXTqOwOkKy9KpnIxHwDhg0qOfXk?embedded=true" target="_blank"
+      class="mt-4 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg inline-block">
+      View & Download Resume
     </a>
   </section>
 
   <!-- Projects Section -->
   <section id="projects" class="max-w-6xl mx-auto px-6 py-12 relative">
     <h2 class="text-3xl font-semibold text-center">Projects</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
       <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="images/schools.png" alt="Flask WebGIS" class="rounded-lg mb-4">
         <h3 class="text-xl font-bold">Flask Simple WebGIS Showing Schools</h3>
         <p class="text-gray-400">A simple WebGIS application built with Flask to display school locations.</p>
-        <a href="https://github.com/ClementNdome/flask-simple-webgis-showing-schools" class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
+        <a href="https://github.com/ClementNdome/flask-simple-webgis-showing-schools"
+          class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
           View on GitHub
         </a>
       </div>
       <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="images/ews1.png" alt="Spatial Analysis" class="rounded-lg mb-4">
         <h3 class="text-xl font-bold">Spatial Analysis</h3>
-        <p class="text-gray-400">A project focused on spatial data processing and analysis for early warning systems.</p>
-        <a href="https://github.com/ClementNdome/gis-maize-inventory-system" class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
+        <p class="text-gray-400">A project focused on spatial data processing and analysis for early warning systems.
+        </p>
+        <a href="https://github.com/ClementNdome/gis-maize-inventory-system"
+          class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
           View on GitHub
         </a>
       </div>
       <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="images/airports.png" alt="Flask WebGIS" class="rounded-lg mb-4">
+        <h3 class="text-xl font-bold">WebGIS- Kenya-airports and Navigation </h3>
+        <p class="text-gray-400">This Web GIS application provides an interactive map of Kenya’s airports and airstrips,
+          integrating PostGIS, Django, and Leaflet for spatial analysis. Users can filter airports by runway length,
+          proximity to the equator, and nearest location for travelers. The system supports distance calculations and
+          dynamic visualizations, with a cloud-hosted database on Render for accessibility. It can be accessed at
+          <li><a href="kenya-airports.onrender.com" class="hover:text-blue-400">kenya-airports.onrender.com</a></li>🚀</p>
+        <a href="https://github.com/ClementNdome/Kenya-airports"
+          class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
+          View on GitHub
+        </a>
+      </div>
+      <!-- <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="images/maize1.png" alt="LULC Classification" class="rounded-lg mb-4">
         <h3 class="text-xl font-bold">Land Use Land Cover Classification</h3>
         <p class="text-gray-400">Using Google Earth Engine for land use and land cover classification.</p>
-        <a href="https://github.com/ClementNdome/GEE--Land-Use-Land-Cover-classification-" class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
+        <a href="https://github.com/ClementNdome/GEE--Land-Use-Land-Cover-classification-"
+          class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
+          View on GitHub
+        </a>
+      </div> -->
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <img src="images/maize2.png" alt="Maize Yield Prediction" class="rounded-lg mb-4">
+        <h3 class="text-xl font-bold">Crop Inventory & Maize Yield Prediction System</h3>
+        <p class="text-gray-400">This system leverages remote sensing data, local agricultural records, and machine
+          learning to predict maize yield with high accuracy. By analyzing factors like weather patterns, soil
+          properties, and vegetation indices, it provides farmers and policymakers with valuable insights for optimizing
+          production. The model integrates geospatial analysis and predictive analytics, making it a powerful tool for
+          data-driven agricultural decision-making. 🚜🌱.
+        </p>
+        <a href="https://github.com/ClementNdome/maize-yield-prediction"
+          class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
+          View on GitHub
+        </a>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <div class="grid grid-cols-2 gap-2 mb-4">
+          <img src="images/datacollect1.jpg" alt="Forest Data Collection" class="rounded-lg">
+          <img src="images/datacollect2.jpg" alt="Forest Data Collection" class="rounded-lg">
+          <img src="images/datacollect3.jpg" alt="Forest Data Collection" class="rounded-lg">
+          <img src="images/datacollect4.jpg" alt="Forest Data Collection" class="rounded-lg">
+        </div>
+        <h3 class="text-xl font-bold">Forest Data Collection App</h3>
+        <p class="text-gray-400">A mobile application for collecting spatial data in forest environments.</p>
+        <a href="https://github.com/ClementNdome/forest-data-collection-app"
+          class="mt-4 inline-block px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg">
           View on GitHub
         </a>
       </div>
@@ -84,46 +127,21 @@
   <!-- Skills Section -->
   <section id="skills" class="max-w-6xl mx-auto px-6 py-12 relative">
     <h2 class="text-3xl font-semibold text-center">Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-6 text-center">
-      <div class="bg-gray-800 p-4 rounded-lg">
-        <h3 class="font-bold">GIS & Remote Sensing</h3>
-      </div>
-      <div class="bg-gray-800 p-4 rounded-lg">
-        <h3 class="font-bold">Web Development</h3>
-      </div>
-      <div class="bg-gray-800 p-4 rounded-lg">
-        <h3 class="font-bold">Machine Learning</h3>
-      </div>
-      <div class="bg-gray-800 p-4 rounded-lg">
-        <h3 class="font-bold">Data Visualization</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="max-w-4xl mx-auto px-6 py-12 text-center relative">
-    <h2 class="text-3xl font-semibold">About Me</h2>
-    <p class="text-gray-400 mt-4">
-      I am a Geospatial Information Science specialist with expertise in GIS, remote sensing, and web development.
-      Passionate about spatial analysis, machine learning applications in GIS, and building innovative web solutions.
-    </p>
+    <ul class="text-center text-gray-400 mt-4">
+      <li>GIS & Remote Sensing</li>
+      <li>Machine Learning & AI</li>
+      <li>Web Development (Flask, Django)</li>
+      <li>Data Analysis & Visualization</li>
+      <li>Google Earth Engine</li>
+    </ul>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="max-w-4xl mx-auto px-6 py-12 text-center relative">
-    <h2 class="text-3xl font-semibold">Contact</h2>
-    <p class="text-gray-400 mt-4">Feel free to reach out to me through any of the following:</p>
-    <ul class="mt-6 space-y-4">
-      <li>
-        <strong>Email@ </strong> <a href="mailto:clementndome20@gmail.com" class="hover:text-blue-400">clementndome20@gmail.com</a>
-      </li>
-      <li>
-        <strong></strong> <a href="https://github.com/ClementNdome" target="_blank" class="hover:text-blue-400">GitHub</a>
-      </li>
-      <li>
-        <strong></strong> <a href="https://www.linkedin.com/in/clement-ndome-9a9ivakawm2/" target="_blank" class="hover:text-blue-400">LinkedIn</a>
-      </li>
-    </ul>
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-12 relative">
+    <h2 class="text-3xl font-semibold text-center">Contact</h2>
+    <p class="text-center text-gray-400 mt-4">Email: clementndome@example.com</p>
+    <p class="text-center text-gray-400">LinkedIn: linkedin.com/in/clementndome</p>
+    <p class="text-center text-gray-400">GitHub: github.com/ClementNdome</p>
   </section>
 
   <!-- Footer -->
@@ -131,4 +149,5 @@
     Created by Clement Ndome © 2025
   </footer>
 </body>
+
 </html>
