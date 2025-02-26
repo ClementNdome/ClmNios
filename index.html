@@ -6,27 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clement Ndome | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Add Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  
   <style>
     body {
       background: url('image.png') no-repeat center center/cover;
       background-size: cover;
       background-attachment: fixed;
       font-family: 'Open Sans', sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .light-mode {
+      background-color: #f3f4f6;
+      color: #111827;
+    }
+
+    .light-mode .overlay {
+      background: rgba(255, 255, 255, 0.8) !important;
     }
 
     h1 {
       font-family: 'Lobster', cursive;
     }
 
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    h2, h3, h4, h5, h6 {
       font-family: 'Poppins', sans-serif;
     }
 
@@ -37,6 +43,7 @@
       left: 0;
       width: 100%;
       height: 100%;
+      transition: background 0.3s;
     }
 
     .project-image {
@@ -70,6 +77,26 @@
     .btn-secondary:hover {
       background: rgba(255, 255, 255, 0.2);
     }
+
+    .progress-bar {
+      height: 8px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: #667eea;
+      border-radius: 4px;
+      transition: width 0.5s ease;
+    }
+
+    @media (max-width: 768px) {
+      .grid-cols-3 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
   </style>
 </head>
 
@@ -79,33 +106,39 @@
   <!-- Navbar -->
   <nav class="py-4 px-6 flex justify-between items-center bg-gray-800 bg-opacity-90 relative">
     <h1 class="text-2xl font-bold">Nios</h1>
-    <ul class="flex space-x-6 items-center">
-      <!-- <li><a href="#" class="hover:text-blue-400 transition-colors">Home</a></li> -->
-      <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
-      <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
-      <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
-      <li>
-        <!-- <a href="https://drive.google.com/file/d/1AGKIoOXTqOwOkKy9KpnIxHwDhg0qOfXk?embedded=true" target="_blank"
-          class="btn-primary px-4 py-2 rounded-lg">
-          View CV
-        </a> -->
-      </li>
-    </ul>
+    <div class="flex items-center space-x-6">
+      <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-gray-700 text-white">
+        <i class="fas fa-moon"></i>
+      </button>
+      <ul class="flex space-x-6 items-center">
+        <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
+        <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
+        <li>
+          <a href="path/to/your-cv.pdf" download class="btn-primary px-4 py-2 rounded-lg">
+            Download CV
+          </a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="text-center py-20 relative">
+  <section class="text-center py-20 relative" data-aos="fade-up">
     <h1 class="text-5xl font-bold mb-4">Clement Ndome</h1>
-    <p class="text-gray-300 text-xl mb-6">Surveyor | GIS Developer | Web Developer | Data analyst</p>
+    <p class="text-gray-300 text-xl mb-6">GIS Developer | Web Developer | Data Analyst</p>
+    <a href="#projects" class="btn-primary px-6 py-3 rounded-lg">
+      View My Projects
+    </a>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-12 relative">
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-12 relative" data-aos="fade-up">
     <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Project 1 -->
       <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-        <a href="https://github.com/ClementNdome/flask-simple-webgis-showing-schools" target="_blank">
+        <a href="https://webgis-schools.onrender.com/" target="_blank">
           <img src="images/schools.png" alt="Flask WebGIS" class="rounded-lg mb-4 project-image">
         </a>
         <h3 class="text-xl font-bold mb-2">Flask Simple WebGIS Showing Schools</h3>
@@ -122,8 +155,7 @@
           <img src="images/ews1.png" alt="Spatial Analysis" class="rounded-lg mb-4 project-image">
         </a>
         <h3 class="text-xl font-bold mb-2">Spatial Analysis</h3>
-        <p class="text-gray-300 mb-4">A project focused on spatial data processing and analysis for early warning
-          systems.</p>
+        <p class="text-gray-300 mb-4">A project focused on spatial data processing and analysis for early warning systems.</p>
         <a href="https://github.com/ClementNdome/gis-maize-inventory-system" target="_blank"
           class="btn-secondary px-4 py-2 rounded-lg inline-block">
           View on GitHub
@@ -136,8 +168,7 @@
           <img src="images/airports.png" alt="DJANGO WebGIS" class="rounded-lg mb-4 project-image">
         </a>
         <h3 class="text-xl font-bold mb-2">WebGIS- Kenya-airports and Navigation</h3>
-        <p class="text-gray-300 mb-4">This Web GIS application provides an interactive map of Kenya’s airports and
-          airstrips, integrating PostGIS, Django, and Leaflet for spatial analysis.</p>
+        <p class="text-gray-300 mb-4">This Web GIS application provides an interactive map of Kenya’s airports and airstrips, integrating PostGIS, Django, and Leaflet for spatial analysis.</p>
         <a href="https://github.com/ClementNdome/Kenya-airports" target="_blank"
           class="btn-secondary px-4 py-2 rounded-lg inline-block">
           View on GitHub
@@ -150,72 +181,54 @@
           <img src="images/maize2.png" alt="Maize Yield Prediction" class="rounded-lg mb-4 project-image">
         </a>
         <h3 class="text-xl font-bold mb-2">Crop Inventory & Maize Yield Prediction System</h3>
-        <p class="text-gray-300 mb-4">This system leverages remote sensing data, local agricultural records, and machine
-          learning to predict maize yield with high accuracy.</p>
+        <p class="text-gray-300 mb-4">This system leverages remote sensing data, local agricultural records, and machine learning to predict maize yield with high accuracy.</p>
         <a href="https://github.com/ClementNdome/maize-yield-prediction" target="_blank"
           class="btn-secondary px-4 py-2 rounded-lg inline-block">
           View on GitHub
         </a>
       </div>
-
-      <!-- Project 5 -->
-      <!-- <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-        <a href="https://github.com/ClementNdome/forest-data-collection-app" target="_blank">
-          <div class="grid grid-cols-2 gap-2 mb-4">
-            <img src="images/datacollect1.jpg" alt="Forest Data Collection" class="rounded-lg project-image">
-            <img src="images/datacollect2.jpg" alt="Forest Data Collection" class="rounded-lg project-image">
-            <img src="images/datacollect3.jpg" alt="Forest Data Collection" class="rounded-lg project-image">
-            <img src="images/datacollect4.jpg" alt="Forest Data Collection" class="rounded-lg project-image">
-          </div>
-        </a>
-        <h3 class="text-xl font-bold mb-2">Forest Data Collection App</h3>
-        <p class="text-gray-300 mb-4">A mobile application for collecting spatial data in forest environments.</p>
-        <a href="https://github.com/ClementNdome/forest-data-collection-app" target="_blank"
-          class="btn-secondary px-4 py-2 rounded-lg inline-block">
-          View on GitHub
-        </a>
-      </div> -->
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="max-w-6xl mx-auto px-6 py-12 relative">
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-12 relative" data-aos="fade-up">
     <h2 class="text-3xl font-semibold text-center mb-8">Skills</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-      <!-- Skill 1 -->
-      <div
-        class="skill-item bg-gradient-to-r from-purple-600 to-blue-500 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105">
-        <p class="text-center font-semibold">GIS & Remote Sensing</p>
+      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
+        <p class="text-center font-semibold mb-2">GIS & Remote Sensing</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 90%"></div>
+        </div>
       </div>
-
-      <!-- Skill 2 -->
-      <div
-        class="skill-item bg-gradient-to-r from-green-500 to-teal-400 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105">
-        <p class="text-center font-semibold">Machine Learning & AI</p>
+      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
+        <p class="text-center font-semibold mb-2">Machine Learning & AI</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 80%"></div>
+        </div>
       </div>
-
-      <!-- Skill 3 -->
-      <div
-        class="skill-item bg-gradient-to-r from-orange-500 to-pink-500 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105">
-        <p class="text-center font-semibold">Web Development (Flask, Django)</p>
+      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
+        <p class="text-center font-semibold mb-2">Web Development (Flask, Django)</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 85%"></div>
+        </div>
       </div>
-
-      <!-- Skill 4 -->
-      <div
-        class="skill-item bg-gradient-to-r from-indigo-500 to-purple-500 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105">
-        <p class="text-center font-semibold">Data Analysis & Visualization</p>
+      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
+        <p class="text-center font-semibold mb-2">Data Analysis & Visualization</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 88%"></div>
+        </div>
       </div>
-
-      <!-- Skill 5 -->
-      <div
-        class="skill-item bg-gradient-to-r from-yellow-500 to-red-500 text-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow transform hover:scale-105">
-        <p class="text-center font-semibold">Google Earth Engine</p>
+      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
+        <p class="text-center font-semibold mb-2">Google Earth Engine</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 92%"></div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="max-w-6xl mx-auto px-6 py-12 relative">
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-12 relative" data-aos="fade-up">
     <h2 class="text-3xl font-semibold text-center mb-8">Contact Me</h2>
     <form action="https://formspree.io/f/manqpegn" method="POST" class="max-w-2xl mx-auto">
       <div class="mb-4">
@@ -246,32 +259,62 @@
 
   <!-- Footer -->
   <footer class="text-center py-4 bg-blue-900 bg-opacity-90">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a href="https://github.com/ClementNdome" target="_blank" class="text-gray-300 hover:text-blue-400 text-2xl">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-300 hover:text-blue-400 text-2xl">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
     <p>Clement Ndome © 2025</p>
   </footer>
 
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-4 right-4 p-3 bg-blue-500 text-white rounded-full shadow-lg hidden">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    AOS.init({ duration: 1000 });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('light-mode');
+      themeToggle.innerHTML = body.classList.contains('light-mode') 
+        ? '<i class="fas fa-sun"></i>' 
+        : '<i class="fas fa-moon"></i>';
+    });
+
+    // Back to Top
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTopButton.classList.toggle('hidden', window.scrollY < 300);
+    });
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Contact Form
     const form = document.querySelector('form');
     const successMessage = document.getElementById('success-message');
-
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const formData = new FormData(form);
       const response = await fetch(form.action, {
         method: 'POST',
         body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
+        headers: { 'Accept': 'application/json' }
       });
-
       if (response.ok) {
         successMessage.classList.remove('hidden');
         form.reset();
-      } else {
-        alert('Something went wrong. Please try again.');
+        setTimeout(() => successMessage.classList.add('hidden'), 3000);
       }
     });
   </script>
 </body>
-
 </html>
