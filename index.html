@@ -4,75 +4,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clement Ndome | Portfolio</title>
+  <title>Clement Ndome | Geospatial Software Engineer</title>
 
-  <link rel="preload" as="image" href="https://clementndome.github.io/ClmNios/images/clemoo-share.webp">
-
-  <!-- new icon -->
+  <!-- Favicon Links -->
   <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
-<link rel="shortcut icon" href="my-favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png" />
-<link rel="manifest" href="my-favicon/site.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg" />
+  <link rel="shortcut icon" href="my-favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="my-favicon/site.webmanifest" />
 
+  <!-- Preload Key Assets for Performance -->
+  <link rel="preload" as="image" href="images/clemoo-share.webp">
+  <link rel="preload" as="image" href="image.png">
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet">
-  <link rel="preload" href="image.png" as="image">
 
+  <!-- AOS for Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- Google Fonts - Inter (Clean Sans-serif) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Enhanced SEO Meta Tags -->
+  <meta name="description" content="Clement Ndome: Expert GIS Developer & Geospatial Software Engineer specializing in ESRI Suite, Python, AI-driven spatial solutions, and co-founder of SpatioNEX.">
+  <meta name="keywords" content="GIS Developer, Geospatial Software Engineer, ArcGIS Expert, Python Django, Remote Sensing, Web GIS, AI Geospatial, SpatioNEX, Climate Resilience, Spatial Analytics">
+  <meta name="author" content="Clement Ndome">
+  <meta name="robots" content="index, follow">
 
   <!-- Open Graph / Facebook Meta Tags -->
-<meta property="og:title" content="Clement Ndome | GIS & Web Developer Portfolio" />
-<meta property="og:description" content="GIS Developer | Web Developer | Data Analyst. Explore my projects and skills." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://clementndome.github.io/ClmNios/" />
-<meta property="og:image" content="https://clementndome.github.io/ClmNios/images/clemoo-share.webp" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+  <meta property="og:title" content="Clement Ndome | GIS Developer & Geospatial Software Engineer" />
+  <meta property="og:description" content="Expert GIS Developer & Geospatial Software Engineer specializing in ESRI Suite, Python, AI-driven spatial solutions, and co-founder of SpatioNEX." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clementndome.github.io/ClmNios/" />
+  <meta property="og:image" content="https://clementndome.github.io/ClmNios/images/clemoo-share.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Clement Ndome | GIS & Web Developer Portfolio" />
-<meta name="twitter:description" content="GIS Developer | Web Developer | Data Analyst. Explore my projects and skills." />
-<meta name="twitter:image" content="https://clementndome.github.io/ClmNios/images/clemoo-share.webp" />
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clement Ndome | GIS Developer & Geospatial Software Engineer" />
+  <meta name="twitter:description" content="Expert GIS Developer & Geospatial Software Engineer specializing in ESRI Suite, Python, AI-driven spatial solutions, and co-founder of SpatioNEX." />
+  <meta name="twitter:image" content="https://clementndome.github.io/ClmNios/images/clemoo-share.webp" />
 
- 
+  <!-- Structured Data for SEO (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Clement Ndome",
+    "jobTitle": "GIS Developer & Geospatial Software Engineer",
+    "url": "https://clementndome.github.io/ClmNios/",
+    "sameAs": [
+      "https://github.com/ClementNdome",
+      "https://www.linkedin.com/in/clement-ndome-a3b968354/",
+      "https://spationex.com"
+    ],
+    "description": "Expert GIS Developer & Geospatial Software Engineer specializing in ESRI Suite, Python, AI-driven spatial solutions, and co-founder of SpatioNEX.",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "SpatioNEX",
+      "url": "https://spationex.com"
+    }
+  }
+  </script>
+
+  <!-- SpatioNEX Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SpatioNEX",
+    "url": "https://spationex.com",
+    "description": "Geospatial intelligence platform empowering decision-makers with automated spatial analytics for climate resilience",
+    "foundingDate": "2025",
+    "address": {
+      "@type": "PostalAddress", 
+      "addressRegion": "Africa"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@spationex.com",
+      "contactType": "customer service",
+      "areaServed": "AF",
+      "availableLanguage": ["en"]
+    },
+    "sameAs": [
+      "https://linkedin.com/company/spationex",
+      "https://twitter.com/spationex",
+      "https://github.com/SpatioNEX"
+    ],
+    "knowsAbout": [
+      "Geospatial Intelligence",
+      "Spatial Analytics",
+      "Climate Resilience", 
+      "Satellite Data Analysis",
+      "Automated Intelligence",
+      "Environmental Monitoring"
+    ],
+    "areaServed": ["Africa"]
+  }
+  </script>
 
   <style>
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+    
     body {
       background: url('image.png') no-repeat center center/cover;
       background-size: cover;
       background-attachment: fixed;
-      font-family: 'Open Sans', sans-serif;
       transition: background-color 0.3s, color 0.3s;
     }
 
     .light-mode {
-      background-color: #f3f4f6;
-      color: #111827;
+      --bg-primary: #f9fafb;
+      --text-primary: #1f2937;
+      --text-secondary: #4b5563;
+      --bg-card: #ffffff;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --btn-bg: #3b82f6;
+      --btn-text: #ffffff;
+      --nav-bg: rgba(255, 255, 255, 0.95);
+      --overlay-bg: rgba(255, 255, 255, 0.85);
+      --progress-bg: rgba(0, 0, 0, 0.1);
+      --progress-fill: #3b82f6;
+      --accent-color: #3b82f6;
     }
 
-    .light-mode .overlay {
-      background: rgba(255, 255, 255, 0.8) !important;
+    .dark-mode {
+      --bg-primary: #111827;
+      --text-primary: #f9fafb;
+      --text-secondary: #d1d5db;
+      --bg-card: #1f2937;
+      --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+      --btn-bg: #3b82f6;
+      --btn-text: #ffffff;
+      --nav-bg: rgba(17, 24, 39, 0.95);
+      --overlay-bg: rgba(0, 0, 0, 0.7);
+      --progress-bg: rgba(255, 255, 255, 0.2);
+      --progress-fill: #60a5fa;
+      --accent-color: #60a5fa;
     }
 
-    h1 {
-      font-family: 'Lobster', cursive;
-    }
-
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Poppins', sans-serif;
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
     }
 
     .overlay {
-      background: rgba(0, 0, 0, 0.6);
+      background: var(--overlay-bg);
       position: absolute;
       top: 0;
       left: 0;
@@ -81,229 +166,516 @@
       transition: background 0.3s;
     }
 
-    .project-image {
-      transition: transform 0.3s ease, opacity 0.3s ease;
+    .project-card, .experience-card {
+      background-color: var(--bg-card);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 12px;
+      overflow: hidden;
     }
 
-    .project-image:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
+    .project-card:hover, .experience-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, #667eea, #764ba2);
-      color: white;
+      background-color: var(--btn-bg);
+      color: var(--btn-text);
       font-weight: 600;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .btn-primary:hover {
+      background-color: #2563eb;
       transform: translateY(-2px);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
 
     .btn-secondary {
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
+      background-color: transparent;
+      color: var(--accent-color);
+      border: 1.5px solid var(--accent-color);
       font-weight: 600;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.2);
+      background-color: var(--accent-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .nav-bg {
+      background-color: var(--nav-bg);
+      backdrop-filter: blur(10px);
+    }
+
+    .footer-bg {
+      background-color: var(--nav-bg);
     }
 
     .progress-bar {
       height: 8px;
-      background: rgba(255, 255, 255, 0.2);
+      background: var(--progress-bg);
       border-radius: 4px;
       overflow: hidden;
     }
 
     .progress-fill {
       height: 100%;
-      background: #667eea;
+      background: var(--progress-fill);
       border-radius: 4px;
       transition: width 0.5s ease;
     }
 
+    .skill-card {
+      background-color: var(--bg-card);
+      box-shadow: var(--shadow);
+      border-radius: 12px;
+      transition: all 0.3s ease;
+      padding: 1.5rem;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+    }
+
+    .accent-text {
+      color: var(--accent-color);
+    }
+
+    .section-title {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
+
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--accent-color);
+      border-radius: 2px;
+    }
+
+    /* Mobile Menu */
     @media (max-width: 768px) {
-      .grid-cols-3 {
-        grid-template-columns: repeat(1, 1fr);
+      .desktop-menu {
+        display: none !important;
       }
+
+      .mobile-menu {
+        display: block;
+      }
+
+      .grid-cols-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .md\:grid-cols-2 {
+        grid-template-columns: 1fr;
+      }
+      
+      /* Fixed mobile menu styles */
+      #mobile-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--nav-bg);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 1rem 0;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        backdrop-filter: blur(10px);
+      }
+      
+      #mobile-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      
+      #mobile-menu li {
+        text-align: center;
+        padding: 0.75rem 0;
+      }
+      
+      #mobile-menu a {
+        display: block;
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Desktop Menu */
+    @media (min-width: 769px) {
+      .mobile-menu {
+        display: none !important;
+      }
+      
+      .desktop-menu {
+        display: flex !important;
+      }
+    }
+
+    /* Bouncy Scroll Indicator */
+    .scroll-indicator {
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-10px);
+      }
+      60% {
+        transform: translateY(-5px);
+      }
+    }
+    
+    /* Gradient text effect */
+    .gradient-text {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
   </style>
 </head>
 
-<body class="bg-gray-900 text-white relative">
+<body class="bg-gray-900 text-white relative dark-mode">
   <div class="overlay"></div>
 
   <!-- Navbar -->
-  <nav class="py-4 px-6 flex justify-between items-center bg-gray-800 bg-opacity-90 relative">
-    <h1 class="text-2xl font-bold">Nios</h1>
+  <nav class="py-4 px-6 flex justify-between items-center nav-bg relative z-50 sticky top-0">
+    <h1 class="text-2xl font-bold">Clement Ndome</h1>
     <div class="flex items-center space-x-6">
-      <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-gray-700 text-white">
+      <button id="theme-toggle" class="px-4 py-2 rounded-lg bg-gray-700 text-white transition-all hover:scale-105">
         <i class="fas fa-moon"></i>
       </button>
-      <ul class="flex space-x-6 items-center">
-        <li><a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a></li>
-        <li><a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a></li>
-        <li><a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a></li>
-        <!-- <li>
-          <a href="https://drive.google.com/file/d/1nraG6lkkIBJxY6efoxhQnajaG3MJDB8W?embedded=true" target="_blank"
-            class="btn-primary px-4 py-2 rounded-lg">
-             CV 
-          </a>
-        </li> -->
+      <!-- Desktop Menu - Hidden on mobile -->
+      <ul class="desktop-menu flex space-x-6 items-center">
+        <li><a href="#projects" class="hover:text-gray-300 transition-colors font-medium">Projects</a></li>
+        <li><a href="#skills" class="hover:text-gray-300 transition-colors font-medium">Skills</a></li>
+        <li><a href="#experience" class="hover:text-gray-300 transition-colors font-medium">Experience</a></li>
+        <li><a href="#contact" class="hover:text-gray-300 transition-colors font-medium">Contact</a></li>
       </ul>
+      <!-- Mobile Hamburger Menu - Hidden on desktop -->
+      <button id="mobile-toggle" class="mobile-menu hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </nav>
+  
+  <!-- Mobile Menu (now positioned outside of nav) -->
+  <ul id="mobile-menu" class="mobile-menu hidden">
+    <li><a href="#projects" class="hover:text-gray-300 font-medium">Projects</a></li>
+    <li><a href="#skills" class="hover:text-gray-300 font-medium">Skills</a></li>
+    <li><a href="#experience" class="hover:text-gray-300 font-medium">Experience</a></li>
+    <li><a href="#contact" class="hover:text-gray-300 font-medium">Contact</a></li>
+  </ul>
 
   <!-- Hero Section -->
-  <section class="text-center py-20 relative" data-aos="fade-up">
-    <h1 class="text-5xl font-bold mb-4">Clement Ndome</h1>
-    <p class="text-gray-300 text-xl mb-6">GIS Developer | Web Developer | Data Analyst</p>
-    <a href="#projects" class="btn-primary px-6 py-3 rounded-lg">
-      View My Projects
+  <section class="text-center py-24 relative" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-5xl md:text-6xl font-bold mb-6">Clement Ndome</h1>
+      <p class="text-2xl md:text-3xl font-semibold mb-6 -text"><i>Geospatial Software Engineer</i></p>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+        Building intelligent spatial solutions with Python, AI, and cutting-edge GIS technologies. 
+        <!-- Co-founder of <a href="https://spationex.com" target="_blank" class="accent-text font-semibold hover:underline">SpatioNEX</a>. -->
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#projects" class="btn-primary px-6 py-3 rounded-lg">
+      Explore My Projects
     </a>
+        <a href="#contact" class="btn-secondary px-8 py-3 rounded-lg font-semibold text-lg">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+    <div class="mt-16 text-gray-500 scroll-indicator">
+      <i class="fas fa-arrow-down text-2xl"></i>
+    </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-12 relative" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold text-center mb-8">Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Project 3 -->
-      <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16 relative" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-4 section-title">Featured Projects</h2>
+    <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12 text-lg">Innovative solutions combining geospatial technology with modern software engineering</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project: WebGIS for Kenya Airports and Navigation -->
+      <div class="project-card">
         <a href="https://kenya-airports.onrender.com" target="_blank">
-          <img src="images/airports.png" alt="DJANGO WebGIS" class="rounded-lg mb-4 project-image">
+          <img src="images/airports.png" alt="Interactive WebGIS map of Kenya airports and airstrips using Django and Leaflet" class="w-full h-48 object-cover">
         </a>
-        <h3 class="text-xl font-bold mb-2">WebGIS- Kenya-airports and Navigation</h3>
-        <p class="text-gray-300 mb-4">This Web GIS application provides an interactive map of Kenya’s airports and
-          airstrips, integrating PostGIS, Django, and Leaflet for spatial analysis.</p>
-        <a href="https://github.com/ClementNdome/Kenya-airports" target="_blank"
-          class="btn-secondary px-4 py-2 rounded-lg inline-block">
-          View on GitHub
-        </a>
-        <a href="https://kenya-airports.onrender.com" target="_blank"
-          class="btn-secondary px-4 py-2 rounded-lg inline-block">
-          View live site
-        </a>
-
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">Kenya Airports WebGIS</h3>
+          <p class="text-gray-300 mb-4">Comprehensive WebGIS application with PostGIS, Django, and Leaflet for spatial analysis of Kenya's aviation infrastructure.</p>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://github.com/ClementNdome/Kenya-airports" target="_blank" class="btn-secondary px-4 py-2 rounded-lg text-sm">
+              GitHub
+            </a>
+            <a href="https://kenya-airports.onrender.com" target="_blank" class="btn-primary px-4 py-2 rounded-lg text-sm">
+              link
+            </a>
+          </div>
+        </div>
       </div>
-      <!-- Project 1 -->
-      <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+
+      <!-- Project: WebGIS for School Location Analysis -->
+      <div class="project-card">
         <a href="https://webgis-schools.onrender.com/" target="_blank">
-          <img src="images/schools.png" alt="Flask WebGIS" class="rounded-lg mb-4 project-image">
+          <img src="images/schools.png" alt="Flask-based WebGIS application for visualizing school locations in Kenya" class="w-full h-48 object-cover">
         </a>
-        <h3 class="text-xl font-bold mb-2">Flask Simple WebGIS Showing Schools</h3>
-        <p class="text-gray-300 mb-4">An interactive web application that visualizes school locations using GIS and spatial data. It allows users to search, explore, and analyze school distributions on an interactive map..</p>
-        <a href="https://github.com/ClementNdome/flask-app-deploy" target="_blank"
-          class="btn-secondary px-4 py-2 rounded-lg inline-block">
-          View on GitHub
-        </a>
-        <a href="https://webgis-schools.onrender.com/" target="_blank"
-          class="btn-secondary px-4 py-2 rounded-lg inline-block">
-          View live site
-        </a>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">School Location Analysis</h3>
+          <p class="text-gray-300 mb-4">Interactive Flask WebGIS tool using Leaflet to visualize and analyze school distributions across Kenya.</p>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://github.com/ClementNdome/webgis-schools" target="_blank" class="btn-secondary px-4 py-2 rounded-lg text-sm">
+              GitHub
+            </a>
+            <a href="https://webgis-schools.onrender.com/" target="_blank" class="btn-primary px-4 py-2 rounded-lg text-sm">
+              link
+            </a>
+          </div>
+        </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-        <a href="https://github.com/ClementNdome/gis-maize-inventory-system" target="_blank">
-          <img src="images/ews1.png" alt="Spatial Analysis" class="rounded-lg mb-4 project-image">
+      <!-- Project: KCAA Smart Assistant Chatbot -->
+      <div class="project-card">
+        <a href="https://kc-chatbot.streamlit.app/" target="_blank">
+          <img src="images/kcaa-chatbot.png" alt="AI-powered RAG chatbot for KCAA regulations using Streamlit and LangChain" class="w-full h-48 object-cover">
         </a>
-        <h3 class="text-xl font-bold mb-2">Early Warning System for Agriculture</h3>
-        <p class="text-gray-300 mb-4">
-          A Flask-based system that analyzes weather, soil moisture, and crop yield data. It triggers alerts via SMS and mobile apps when critical thresholds are exceeded, helping farmers take timely action..</p>
-        <a href="https://github.com/ClementNdome/flaskapp_for_crop_mapping" target="_blank"
-          class="btn-secondary px-4 py-2 rounded-lg inline-block">
-          View on GitHub
-        </a>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-3">KCAA Smart Assistant</h3>
+          <p class="text-gray-300 mb-4">RAG chatbot using Streamlit, LangChain, and Groq LLM to query KCAA aviation regulations with 3-5 second response times.</p>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://github.com/ClementNdome/kcaa-demo" target="_blank" class="btn-secondary px-4 py-2 rounded-lg text-sm">
+              GitHub
+            </a>
+            <a href="https://kc-chatbot.streamlit.app/" target="_blank" class="btn-primary px-4 py-2 rounded-lg text-sm">
+              link
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Section -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-16 relative" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-4 section-title">Professional Experience</h2>
+    <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12 text-lg">Building impactful solutions across aviation, environmental, and geospatial domains</p>
+    
+    <div class="space-y-8">
+      <div class="experience-card">
+        <div class="p-6">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+            <h3 class="text-xl font-bold">GIS Developer</h3>
+            <span class="text-accent-text font-semibold mt-1 md:mt-0">ForbSpace Inc., Kitale, Kenya</span>
+          </div>
+          <p class="text-gray-400 mb-4">January 2025 – Present</p>
+          <ul class="list-none text-gray-300 space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Designed centralized aeronautical geospatial system using GIS Technologies</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Built Django-based GIS systems for AIP data, reducing access time by 40%</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Translated Francophone AIP datasets ensuring cross-language consistency</span>
+            </li>
+          </ul>
+        </div>
       </div>
 
+      <!-- <div class="experience-card">
+        <div class="p-6">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+            <h3 class="text-xl font-bold">Co-founder & Geospatial Engineer</h3>
+            <span class="text-accent-text font-semibold mt-1 md:mt-0">SpatioNEX</span>
+          </div>
+          <p class="text-gray-400 mb-4">2025 – Present</p>
+          <ul class="list-none text-gray-300 space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Co-founded geospatial intelligence platform for climate resilience solutions</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Developed automated spatial analytics for environmental monitoring</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Implemented AI-powered geospatial insights for decision support</span>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      
 
+      <div class="experience-card">
+        <div class="p-6">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+            <h3 class="text-xl font-bold">GIS Developer (Freelance)</h3>
+            <span class="text-accent-text font-semibold mt-1 md:mt-0">Remote Work</span>
+          </div>
+          <p class="text-gray-400 mb-4">March 2024 – December 2024</p>
+          <ul class="list-none text-gray-300 space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Developed WebGIS applications using Django + Leaflet, automating geoprocessing workflows</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Fine-tuned deep learning models achieving 85% accuracy in land-cover predictions</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Integrated geospatial APIs enhancing environmental research capabilities</span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-      <!-- Project 4 -->
-      <div class="bg-gray-800 bg-opacity-90 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-        <a href="https://github.com/ClementNdome/maize-yield-prediction" target="_blank">
-          <img src="images/maize2.png" alt="Maize Yield Prediction" class="rounded-lg mb-4 project-image">
-        </a>
-        <h3 class="text-xl font-bold mb-2">Crop Inventory & Maize Yield Prediction System</h3>
-        <p class="text-gray-300 mb-4">This system leverages remote sensing data, local agricultural records, and machine
-          learning to predict maize yield with high accuracy.</p>
-        <a href="https://github.com/ClementNdome/gis-maize-inventory-system" target="_blank"
-          class="btn-secondary px-4 py-2 rounded-lg inline-block">
-          View on GitHub
-        </a>
+      <div class="space-y-8">
+      <div class="experience-card">
+        <div class="p-6">
+          <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+            <h3 class="text-xl font-bold">GIS & Survey Intern </h3>
+            <span class="text-accent-text font-semibold mt-1 md:mt-0">Survey of Kenya, Nairobi, Kenya</span>
+          </div>
+          <p class="text-gray-400 mb-4">May 2023 – August 2023</p>
+          <ul class="list-none text-gray-300 space-y-3">
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Conducted cadastral surveys using RTK and AutoCAD, updating national plans and performing coordinate transformations (Cassini to UTM).</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Supported digitization and spatial database management for improved land administration.</span>
+            </li>
+            <!-- <li class="flex items-start">
+              <i class="fas fa-check text-green-500 mt-1 mr-3 flex-shrink-0"></i>
+              <span>Translated Francophone AIP datasets ensuring cross-language consistency</span>
+            </li> -->
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="max-w-6xl mx-auto px-6 py-12 relative" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold text-center mb-8">Skills</h2>
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
-        <p class="text-center font-semibold mb-2">GIS & Remote Sensing</p>
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-16 relative" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-4 section-title">Technical Expertise</h2>
+    <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12 text-lg">Comprehensive skills in geospatial technologies, software development, and AI integration</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="skill-card">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-map-marked-alt text-2xl accent-text mr-3"></i>
+          <h3 class="text-lg font-bold">GIS & Remote Sensing</h3>
+        </div>
+        <p class="text-gray-300 mb-4">ArcGIS Suite, QGIS, Google Earth Engine, ENVI, ERDAS Imagine</p>
         <div class="progress-bar">
           <div class="progress-fill" style="width: 100%"></div>
         </div>
       </div>
-      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
-        <p class="text-center font-semibold mb-2">Web Development (Flask, Django)</p>
+      
+      <div class="skill-card">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-code text-2xl accent-text mr-3"></i>
+          <h3 class="text-lg font-bold">Backend Development</h3>
+        </div>
+        <p class="text-gray-300 mb-4">Python, Django, Flask, FastAPI, Node.js, PostgreSQL/PostGIS</p>
         <div class="progress-bar">
           <div class="progress-fill" style="width: 100%"></div>
         </div>
       </div>
-      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
-        <p class="text-center font-semibold mb-2">Machine Learning & AI</p>
+      
+      <div class="skill-card">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-desktop text-2xl accent-text mr-3"></i>
+          <h3 class="text-lg font-bold">Frontend Development</h3>
+        </div>
+        <p class="text-gray-300 mb-4">JavaScript, React, Vue.js, Leaflet, Mapbox, OpenLayers</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 95%"></div>
+        </div>
+      </div>
+      
+      <div class="skill-card">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-brain text-2xl accent-text mr-3"></i>
+          <h3 class="text-lg font-bold">AI & Machine Learning</h3>
+        </div>
+        <p class="text-gray-300 mb-4">TensorFlow, PyTorch, Scikit-learn, Computer Vision, RAG</p>
         <div class="progress-bar">
           <div class="progress-fill" style="width: 90%"></div>
         </div>
       </div>
       
-      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
-        <p class="text-center font-semibold mb-2">Data Analysis & Visualization</p>
-        <div class="progress-bar">
-          <div class="progress-fill" style="width: 99%"></div>
+      <div class="skill-card">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-database text-2xl accent-text mr-3"></i>
+          <h3 class="text-lg font-bold">Spatial Databases</h3>
         </div>
-      </div>
-      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
-        <p class="text-center font-semibold mb-2">Google Earth Engine</p>
+        <p class="text-gray-300 mb-4">PostGIS, SpatiaLite, ArcSDE, GeoServer, Database Design</p>
         <div class="progress-bar">
           <div class="progress-fill" style="width: 100%"></div>
         </div>
       </div>
-      <div class="bg-gray-800 bg-opacity-90 p-4 rounded-lg">
-        <p class="text-center font-semibold mb-2">Climate Tech</p>
+      
+      <div class="skill-card">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-cloud text-2xl accent-text mr-3"></i>
+          <h3 class="text-lg font-bold">DevOps & Cloud</h3>
+        </div>
+        <p class="text-gray-300 mb-4">Docker, AWS, CI/CD, Git, Linux, Server Management</p>
         <div class="progress-bar">
-          <div class="progress-fill" style="width: 100%"></div>
+          <div class="progress-fill" style="width: 95%"></div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="max-w-6xl mx-auto px-6 py-12 relative" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold text-center mb-8">Contact Me</h2>
+  <section id="contact" class="max-w-4xl mx-auto px-6 py-16 relative" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-center mb-4 section-title">Get In Touch</h2>
+    <p class="text-gray-400 text-center max-w-2xl mx-auto mb-12 text-lg">Interested in collaborating? Let's discuss how we can work together</p>
+    
     <form action="https://formspree.io/f/manqpegn" method="POST" class="max-w-2xl mx-auto">
-      <div class="mb-4">
-        <label for="name" class="block text-gray-300 text-sm font-medium mb-2">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required
-          class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white" />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="name" class="block text-gray-300 text-sm font-medium mb-2">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required
+            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white transition-colors" />
+        </div>
+        <div>
+          <label for="email" class="block text-gray-300 text-sm font-medium mb-2">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required
+            class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white transition-colors" />
+        </div>
       </div>
-      <div class="mb-4">
-        <label for="email" class="block text-gray-300 text-sm font-medium mb-2">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required
-          class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white" />
-      </div>
-      <div class="mb-4">
+      <div class="mb-6">
         <label for="message" class="block text-gray-300 text-sm font-medium mb-2">Message</label>
         <textarea id="message" name="message" rows="5" placeholder="Your Message" required
-          class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white"></textarea>
+          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 text-white transition-colors"></textarea>
       </div>
       <div class="text-center">
-        <button type="submit" class="btn-primary px-6 py-3 rounded-lg">
+        <button type="submit" class="btn-primary px-8 py-3 rounded-lg font-semibold text-lg">
           Send Message
         </button>
       </div>
@@ -314,20 +686,23 @@
   </section>
 
   <!-- Footer -->
-  <footer class="text-center py-4 bg-blue-900 bg-opacity-90">
-    <div class="flex justify-center space-x-6 mb-4">
-      <a href="https://github.com/ClementNdome" target="_blank" class="text-gray-300 hover:text-blue-400 text-2xl">
+  <footer class="text-center py-8 footer-bg relative z-50">
+    <div class="flex justify-center space-x-8 mb-6">
+      <a href="https://github.com/ClementNdome" target="_blank" class="text-gray-300 hover:text-white text-2xl transition-colors">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-300 hover:text-blue-400 text-2xl">
+      <a href="https://www.linkedin.com/in/clement-ndome-a3b968354/" target="_blank" class="text-gray-300 hover:text-white text-2xl transition-colors">
         <i class="fab fa-linkedin"></i>
       </a>
+      <a href="https://spationex.com" target="_blank" class="text-gray-300 hover:text-white text-2xl transition-colors">
+        <i class="fas fa-globe"></i>
+      </a>
     </div>
-    <p>Clement Ndome © 2025</p>
+    <p class="text-gray-400">Clement Ndome © 2025 | Geospatial Innovation for Sustainable Solutions</p>
   </footer>
 
   <!-- Back to Top Button -->
-  <button id="back-to-top" class="fixed bottom-4 right-4 p-3 bg-blue-500 text-white rounded-full shadow-lg hidden">
+  <button id="back-to-top" class="fixed bottom-6 right-6 p-3 bg-blue-500 text-white rounded-full shadow-lg hidden transition-all hover:scale-110">
     <i class="fas fa-arrow-up"></i>
   </button>
 
@@ -335,15 +710,85 @@
   <script>
     AOS.init({ duration: 1000 });
 
-    // Theme Toggle
+    // Theme Toggle with Improved Light Mode
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     themeToggle.addEventListener('click', () => {
-      body.classList.toggle('light-mode');
-      themeToggle.innerHTML = body.classList.contains('light-mode')
-        ? '<i class="fas fa-sun"></i>'
-        : '<i class="fas fa-moon"></i>';
+      if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+      } else {
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+      }
     });
+
+    // Mobile Menu Toggle - Fixed
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    let isMenuOpen = false;
+    
+    // Function to toggle mobile menu visibility
+    function toggleMobileMenu() {
+      isMenuOpen = !isMenuOpen;
+      
+      if (isMenuOpen) {
+        mobileMenu.classList.remove('hidden');
+        // Use setTimeout to ensure the display change has taken effect before adding the active class
+        setTimeout(() => {
+          mobileMenu.classList.add('active');
+        }, 10);
+        mobileToggle.innerHTML = '<i class="fas fa-times"></i>';
+      } else {
+        mobileMenu.classList.remove('active');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      }
+    }
+    
+    mobileToggle.addEventListener('click', toggleMobileMenu);
+    
+    // Close mobile menu when clicking on a link
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300);
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        isMenuOpen = false;
+      });
+    });
+
+    // Handle responsive behavior
+    function handleResponsive() {
+      const isMobile = window.innerWidth <= 768;
+      
+      if (isMobile) {
+        // Show mobile toggle, hide desktop menu
+        mobileToggle.classList.remove('hidden');
+        mobileToggle.classList.add('block');
+      } else {
+        // Hide mobile menu and toggle, show desktop menu
+        mobileMenu.classList.remove('active');
+        mobileMenu.classList.add('hidden');
+        mobileToggle.classList.remove('block');
+        mobileToggle.classList.add('hidden');
+        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        isMenuOpen = false;
+      }
+    }
+    
+    // Initial call
+    handleResponsive();
+    
+    // Listen for window resize
+    window.addEventListener('resize', handleResponsive);
 
     // Back to Top
     const backToTopButton = document.getElementById('back-to-top');
