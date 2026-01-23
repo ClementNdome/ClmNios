@@ -835,7 +835,7 @@
         <i class="fas fa-globe"></i>
       </a>
     </div>
-    <p class="text-gray-400">Clement Ndome © 2025 | Geospatial Innovation for Sustainable Solutions</p>
+    <p class="text-gray-400">Clement Ndome © <span id="year"></span> | Geospatial Innovation for Sustainable Solutions</p>
   </footer>
 
   <!-- Back to Top Button -->
@@ -846,6 +846,9 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    // Update year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+
     AOS.init({ duration: 1000 });
 
     // Theme Toggle with Improved Light Mode
