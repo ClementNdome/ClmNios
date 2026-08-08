@@ -1,0 +1,15 @@
+/* TEAM */
+    Clement Ndome
+    GIS & Remote Sensing Engineer
+    Nairobi, Trans Nzoia County, Kenya
+
+/* SITE */
+    Design & development: Clement Ndome
+    GitHub: https://github.com/ClementNdome
+    LinkedIn: https://www.linkedin.com/in/clement-ndome-a3b968354/
+    Email: clementndome20@gmail.com
+
+/* TECHNOLOGY */
+    HTML · CSS · Tailwind · AOS · Font Awesome · GitHub Pages
+
+    Copyright Clement Ndome. Hosted at https://clementndome.github.io/ClmNios/

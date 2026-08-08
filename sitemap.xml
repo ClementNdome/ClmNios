@@ -3,24 +3,41 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://clementndome.github.io/ClmNios/</loc>
-    <lastmod>2025-11-01</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    
+
     <image:image>
       <image:loc>https://clementndome.github.io/ClmNios/images/clemoo-share.webp</image:loc>
       <image:title>Clement Ndome | GIS Developer Portfolio Hero</image:title>
       <image:caption>Geospatial Software Developer - ArcGIS, Python, WebGIS Expert</image:caption>
     </image:image>
-    
+
     <image:image>
-      <image:loc>https://clementndome.github.io/ClmNios/image.png</image:loc>
-      <image:title>Geospatial Portfolio Background</image:title>
+      <image:loc>https://clementndome.github.io/ClmNios/images/agriinsight.png</image:loc>
+      <image:title>AgriInsight crop health monitoring platform</image:title>
+      <image:caption>NDVI, EVI, SAVI crop monitoring with Google Earth Engine and Django</image:caption>
     </image:image>
-  
+
     <image:image>
       <image:loc>https://clementndome.github.io/ClmNios/images/airports.png</image:loc>
       <image:title>Kenya Airports WebGIS Dashboard</image:title>
+      <image:caption>Aviation infrastructure intelligence system</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://clementndome.github.io/ClmNios/images/ews2.png</image:loc>
+      <image:title>Early Warning System crop monitoring</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://clementndome.github.io/ClmNios/images/maize1.png</image:loc>
+      <image:title>Maize yield prediction and crop inventory</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://clementndome.github.io/ClmNios/images/kcaa-chatbot.png</image:loc>
+      <image:title>Smart Knowledge Assistant (RAG) chatbot</image:title>
     </image:image>
   </url>
 </urlset>

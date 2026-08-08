@@ -1,0 +1,29 @@
+# Clement Ndome
+
+> Clement Ndome is a GIS and Remote Sensing Engineer based in Nairobi, Kenya, specializing in Earth Observation, vegetation analysis, agricultural early warning systems, and spatial intelligence for East Africa. He is a co-founder of SpatioNEX, a geospatial intelligence platform for climate resilience. Available for consultancy, collaboration and full-time opportunities.
+
+## About
+- Expert in NDVI, EVI, SAVI, NDMI vegetation indices, Google Earth Engine, crop yield forecasting, and agro-climatic early warning systems.
+- Skills: Python (GeoPandas, Rasterio, GDAL), Django/GeoDjango, PostGIS, ArcGIS Pro, QGIS, Leaflet, ML (Scikit-learn, TensorFlow), RAG/LLM tools.
+
+## Projects
+- [AgriInsight — AI-Driven Crop Health Monitoring Platform](https://agri-insight.spationex.com/landing/): Live production platform using Google Earth Engine for real-time crop stress detection, yield prediction and agro-climatic alerts.
+- [Early Warning System — Crop Yield & Soil Moisture Monitoring](https://github.com/ClementNdome/flaskapp_for_crop_mapping): Flask-based EWS with ML yield prediction and automated alerts.
+- [Crop Inventory & Maize Yield Prediction System](https://github.com/ClementNdome/gis-maize-inventory-system): Remote sensing + ML maize yield prediction with WebGIS dashboard.
+- [Land Use / Land Cover Classification (GEE)](https://github.com/ClementNdome/GEE--Land-Use-Land-Cover-classification-): Landsat 8 LULC classification on Google Earth Engine.
+- [Above-Ground Biomass Estimation Using Vegetation Indices](https://github.com/ClementNdome/AGB-using-vegetation-indices): Spectral-index biomass mapping for carbon and productivity assessment.
+- [GEDI Satellite LiDAR Data Visualization](https://github.com/ClementNdome/GEDI-experiment): Canopy height extraction from NASA GEDI with Kepler.gl 3D visualization.
+- [Aviation Infrastructure Intelligence System](https://kenya-airports.onrender.com): National-scale WebGIS for Kenya's airports (Django, PostGIS, Leaflet).
+- [Education Infrastructure Spatial Analytics](https://webgis-schools.onrender.com): WebGIS for education infrastructure coverage analysis (Flask, PostGIS).
+- [Smart Knowledge Assistant (RAG)](https://adv-chatbot.streamlit.app): Grounded RAG chatbot with ChromaDB and LangChain.
+
+## Contact
+- Email: clementndome20@gmail.com
+- GitHub: https://github.com/ClementNdome
+- LinkedIn: https://www.linkedin.com/in/clement-ndome-a3b968354/
+- SpatioNEX: https://spationex.com
+- SpatioNEX team profile: https://spationex.com/team/clement-ndome
+- Contact form: https://clementndome.github.io/ClmNios/#contact
+
+## Optional
+- Clement is a co-founder of SpatioNEX (https://spationex.com), a geospatial intelligence startup serving Africa.
