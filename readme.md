@@ -29,6 +29,6 @@ Projects · Core Competencies · Professional Experience · Contact
 ## Contact
 
 - Email: clement.ndome@spationex.com
-- LinkedIn: https://www.linkedin.com/in/clement-ndome-a3b968354/
+- LinkedIn: https://www.linkedin.com/in/clement-ndome22/
 - GitHub: https://github.com/ClementNdome
 - SpatioNEX: https://spationex.com/team/clement-ndome

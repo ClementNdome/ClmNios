@@ -20,10 +20,11 @@
 ## Contact
 - Email: clement.ndome@spationex.com
 - GitHub: https://github.com/ClementNdome
-- LinkedIn: https://www.linkedin.com/in/clement-ndome-a3b968354/
+- LinkedIn: https://www.linkedin.com/in/clement-ndome22/
 - SpatioNEX: https://spationex.com
 - SpatioNEX team profile: https://spationex.com/team/clement-ndome
-- Contact form: https://clementndome.github.io/ClmNios/#contact
+- Contact form: https://clementndome.github.io/gis-rs/#contact
+- Note: this classic page has moved to https://clementndome.github.io/gis-rs/
 
 ## Optional
 - Clement is a co-founder of SpatioNEX (https://spationex.com), a geospatial intelligence startup serving Africa.
